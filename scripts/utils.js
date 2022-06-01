@@ -5,3 +5,4 @@ function getDiceRollArray(diceCount) {
 }
 
 export {getDiceRollArray}
+

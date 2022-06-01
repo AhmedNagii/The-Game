@@ -1,4 +1,4 @@
-import {getDiceRollArray} from "./utils"
+import {getDiceRollArray} from "./utils.js"
 
 
 function Character(data) {
@@ -13,7 +13,7 @@ function Character(data) {
     };
   
     this.getCharacterHtml = function () {
-      let diceHtml = getDiceHtml(this.diceCount);
+      let diceHtml = this.getDiceHtml(this.diceCount);
   
       return `<div class="character-card">
             <h4 class="name"> ${this.name} </h4>
